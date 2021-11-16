@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { data } from "../../data";
 
 const UseStateArrayExample = () => {
-  const [persons, setPerson] = useState(data);
+  const [persons, setPersons] = useState(data);
   const onRemove = (id) => {
     console.log("clicked on id", id);
     let newPersonsList = persons.filter((person) => person.id !== id);
-    setPerson(newPersonsList);
+    setPersons(newPersonsList);
   };
   return (
     <React.Fragment>

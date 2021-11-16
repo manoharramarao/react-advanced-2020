@@ -3,11 +3,14 @@ import React from "react";
 import ErrorExample from "./components/error-example/setup";
 import UseStateArrayExample from "./components/usestate-array/setup";
 import UseStateBasics from "./components/usestate-basic/setup";
+import UseStateObjectExample from "./components/usestate-object/setup";
 
 function App() {
   return (
     <div className="container">
-      <UseStateArrayExample></UseStateArrayExample>
+      <h2>
+        <UseStateObjectExample></UseStateObjectExample>
+      </h2>
     </div>
   );
 }

@@ -10,7 +10,12 @@ const UseEffectBasics = () => {
     if (value >= 1) {
       document.title = `New Messages(${value})`;
     }
-  });
+  }, [value]);
+
+  useEffect(() => {
+    console.log("Call only once");
+  }, []);
+
   console.log("Render Component");
   return (
     <>
